@@ -211,3 +211,133 @@
     grid-template-columns: 1fr;
   }
 }
+
+/* Student Profile Header */
+.profile-section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 18px;
+}
+
+.profile-section-header h2 {
+  margin: 0;
+}
+
+/* Edit Profile Button */
+.edit-profile-btn {
+  background-color: #829F89;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.edit-profile-btn:hover {
+  background-color: #6D8974;
+}
+
+/* Edit Profile Form */
+.edit-profile-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.edit-profile-form label {
+  color: #3F5145;
+  font-weight: 600;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.edit-profile-form input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px 14px;
+  border: 1px solid #DCE5DC;
+  border-radius: 8px;
+  background-color: #FBFCF9;
+  color: #3F5145;
+  font-size: 14px;
+  outline: none;
+}
+
+.edit-profile-form input:focus {
+  border-color: #829F89;
+  box-shadow: 0 0 0 3px rgba(130, 159, 137, 0.12);
+}
+
+/* Save and Cancel Buttons */
+.profile-form-buttons {
+  display: flex;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.profile-form-buttons button {
+  padding: 11px 22px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.profile-form-buttons button:first-child {
+  background-color: #829F89;
+  color: white;
+}
+
+.profile-form-buttons button:first-child:hover {
+  background-color: #6D8974;
+}
+
+.profile-form-buttons button:last-child {
+  background-color: #E9EEE8;
+  color: #3F5145;
+}
+
+.profile-form-buttons button:last-child:hover {
+  background-color: #DCE5DC;
+}
+
+.profile-form-buttons button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Success and Error Messages */
+.profile-success {
+  color: #426B4A;
+  background-color: #EDF5ED;
+  padding: 12px 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.profile-error {
+  color: #A33D3D;
+  background-color: #FBEDED;
+  padding: 12px 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+/* Mobile Layout */
+@media (max-width: 600px) {
+  .profile-section-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .profile-form-buttons {
+    flex-wrap: wrap;
+  }
+}

@@ -13,3 +13,10 @@ class StudentCreate(BaseModel):
 class StudentLogin(BaseModel):
     email: str
     password: str
+
+class StudentUpdate(BaseModel):
+    full_name: str | None = Field(default=None, min_length=2)
+    college_name: str | None = None
+    branch: str | None = None
+    year_of_study: str | None = None
+    skills: str | None = None
